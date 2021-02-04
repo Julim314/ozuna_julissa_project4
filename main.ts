@@ -5,6 +5,9 @@ while (true) {
     
     if (input.rotation(Rotation.Roll) > 0) {
         music.siren.playUntilDone()
+    } else {
+        light.clear()
+        music.siren.stop()
     }
     
 }
